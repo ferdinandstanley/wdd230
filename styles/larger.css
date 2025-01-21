@@ -1,0 +1,27 @@
+@media only screen and (min-width: 48rem) {
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    .parent section {
+        box-shadow: 1px 1px 10px black;
+    }
+}
+
+
+/* Layout Adjustments for Larger Screens 
+nav ul {
+    justify-content: space-around;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.card:first-of-type {
+    grid-column: span 2;
+}*/

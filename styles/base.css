@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #0d335d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header img {
+    border-radius: 15%;
+    width: 100px;
+    height: 100px;
+}
+
+header span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, footer, nav {background-color: #0d335d;}
+
+.parent {
+    margin: 1rem 2vw;
+}
+
+.parent section {
+    border: 1px solid white;
+    background-color: #e9f5e9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.parent span {
+    background-color: #415541;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.parent p {
+    padding: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex; 
+    justify-content: center; 
+    background-color: #0d335d;
+}
+
+nav li {
+    margin: 0 1rem;
+    text-decoration: white;
+    color: white ;
+    display: flex;
+}
+
+h1 {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Main Styles */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d335d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer img {
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+}
