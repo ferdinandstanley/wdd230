@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    color: #333;
+    /* Dark text for readability */
+}
+
+/* Header Styles */
+header {
+    background-color: #062a73;
+    /* Primary color */
+    color: white;
+    /* Text color for contrast */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    /* White background for content area */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Section Heading Styles */
+h2 {
+    color: #062a73;
+    /* Primary color for section headings */
+    border-bottom: 2px solid #f2a900;
+    /* Secondary color as underline */
+    padding-bottom: 0.5rem;
+}
+
+/* List Styling */
+ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #062a73;
+    /* Primary color */
+    color: white;
+    /* Text color for contrast */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    /* Ensure images are responsive */
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Link Styles */
+a {
+    color: #f2a900;
+    /* Secondary color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Typography Customization */
+p {
+    line-height: 1.6;
+}
+
+strong {
+    color: #062a73;
+    /* Primary color for emphasis */
+}
+
+/* Add Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
