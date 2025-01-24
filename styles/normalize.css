@@ -1,0 +1,24 @@
+/* Reset margins, paddings, and box-sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default font styles */
+html {
+    font-size: 16px; /* 1rem = 16px */
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth; /* Adds smooth scrolling behavior */
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh; /* Ensures the body always takes up full height */
+    display: flex;
+    flex-direction: column;
+}

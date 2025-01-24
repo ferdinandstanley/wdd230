@@ -1,14 +1,16 @@
 @media only screen and (min-width: 48rem) {
-    .parent {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 10px;
-    }
+  .parent {
+      display: grid;
+      grid-template-columns: 2fr 1fr; /* Two-column layout */
+      gap: 1rem; /* More consistent spacing (use "gap" for both row and column gaps) */
+  }
 
-    .parent section {
-        box-shadow: 1px 1px 10px black;
-    }
+  .parent section {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for a modern look */
+      border-radius: 8px; /* Optional: Rounds section corners */
+  }
 }
+
 
 
 /* Layout Adjustments for Larger Screens 
