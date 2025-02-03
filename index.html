@@ -4,61 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stanley Uchechukwu Ferdinand - WDD 230 - Web Frontend Development</title>
     <meta name="description"
         content="This is WDD 230 - Web Frontend Development course assignment portal for Stanley Uchechukwu Ferdinand.">
     <meta name="author" content="Stanley Uchechukwu Ferdinand">
+    <title>Stanley Uchechukwu Ferdinand - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
 </head>
 
 <body>
     <header>
-        <!-- <button id="hamburger">☰</button> -->
+        <!-- <h1>Temples</h1> -->
         <img src="images/stan.jpg" alt="Stanley Uchechukwu Ferdinand" width="100" height="100">
         <span>Stanley Uchechukwu Ferdinand</span>
-        <button id="hamburger" aria-label="Toggle navigation">☰</button>
-        <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="hamburger-menu" aria-label="Menu" aria-expanded="false">☰</button>
+        <nav class="hidden">
+            <a href="index.html" class="active">Home Page</a>
+            <a href="chamber.html">Chamber</a>
+            <a href="siteplan.html">Site Plan</a>
+            <a href="form.html">Form</a>
+        </nav>
     </header>
 
-    <nav id="menu" class="hidden">
-        <ul>
-            <li><a href="index.html" class="active">Home Page</a></li>
-            <li><a href="chamber.html">Chamber</a></li>
-            <li><a href="siteplan.html">Site Plan</a></li>
-            <li><a href="form.html">Form</a></li>
-        </ul>
-    </nav>
+    <body>
 
-    <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="parent">
-            <section>
-                <span>Learning Activities</span>
-                <ul>
-                    <li>Week 01: <a href="#">Layout</a> | <a href="#">Media Query</a> | <a href="#">JS Pen</a></li>
-                    <li>Week 02:</li>
-                    <li>Week 03:</li>
-                    <li>Week 04:</li>
-                    <li>Week 05:</li>
-                    <li>Week 06:</li>
-                </ul>
-            </section>
-            <section>
-                <span>Information</span>
-                <p>Lagos, Nigeria</p>
-                <p>🌞 69°F - Sunshine</p>
-                <p>Page Visits: 427</p>
-            </section>
+        <main>
+            <div class="hero">
+                <img src="images/aba_nigeria_temple_lds.webp" alt="Aba Nigeria" width="960" height="384">
+                <span>Aba Nigeria Temple</span>
+                <h1>WDD 230: Web Frontend Development</h1>
+                <div class="parent">
+                    <section>
+                        <span1>Learning Activities</span>
+                            <ul>
+                                <li>Week 01: <a href="#">Layout</a> | <a href="#">Media Query</a> | <a href="#">JS
+                                        Pen</a>
+                                </li>
+                                <li>Week 02:</li>
+                                <li>Week 03:</li>
+                                <li>Week 04:</li>
+                                <li>Week 05:</li>
+                                <li>Week 06:</li>
+                            </ul>
+                    </section>
+                    <section>
+                        <span2>Information</span>
+                            <p>Lagos, Nigeria</p>
+                            <p>🌞 69°F - Sunshine</p>
+                            <p>Page Visits: 427</p>
+                    </section>
+                </div>
+        </main>
+
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.051020225384!2d7.372999813704593!3d5.116412296278481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043f23c5738c8eb%3A0xf80e96e942fcd4df!2sAba%20Nigeria!5e0!3m2!1sen!2sng!4v1699999999999!5m2!1sen!2sng"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-    </main>
 
-    <footer>
-        <p>&copy; <span id="currentyear"></span> 🌸 Stanley Uchechukwu Ferdinand, Lagos, Nigeria 🌸</p>
-        <p id="lastModified"></p>
-    </footer>
-    <script src="scripts/getDate.js" defer></script>
-    <script src="scripts/main.js" defer></script>
-</body>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> 🌸 Stanley Uchechukwu Ferdinand, Lagos, Nigeria 🌸</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/getDate.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+    </body>
 
 </html>

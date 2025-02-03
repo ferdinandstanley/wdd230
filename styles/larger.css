@@ -1,14 +1,22 @@
 @media only screen and (min-width: 48rem) {
-  .parent {
-      display: grid;
-      grid-template-columns: 2fr 1fr; /* Two-column layout */
-      gap: 1rem; /* More consistent spacing (use "gap" for both row and column gaps) */
-  }
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /* Two-column layout */
+        gap: 1rem;
+        /* More consistent spacing (use "gap" for both row and column gaps) */
+    }
 
-  .parent section {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for a modern look */
-      border-radius: 8px; /* Optional: Rounds section corners */
-  }
+    .parent section {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Softer shadow for a modern look */
+        border-radius: 8px;
+        /* Optional: Rounds section corners */
+    }
+
+    .hero span {
+        font-size: 2rem;
+    }
 }
 
 

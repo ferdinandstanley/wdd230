@@ -13,7 +13,33 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: relative; /* Allows positioning of the hamburger menu */
+    position: relative;
+    /* Allows positioning of the hamburger menu */
+}
+
+.hero {
+    position: relative;
+}
+
+.map-container {
+    margin: 2rem 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero span {
+    position: absolute;
+    color: white;
+    bottom: 40%;
+    left: 20px;
+    width: 40%;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
 }
 
 header img {
@@ -30,14 +56,16 @@ header span {
 
 /* Hamburger Menu Button */
 #hamburger {
-    display: none; /* Hidden by default for larger screens */
+    display: none;
+    /* Hidden by default for larger screens */
     border: none;
     font-size: 2rem;
     color: white;
     cursor: pointer;
     position: absolute;
     top: 1.5rem;
-    right: 1rem; /* Adjust for alignment */
+    right: 1rem;
+    /* Adjust for alignment */
 }
 
 #darkModeToggle {
@@ -63,7 +91,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Ensure proper wrapping if needed */
+    flex-wrap: wrap;
+    /* Ensure proper wrapping if needed */
 }
 
 nav li {
@@ -124,44 +153,67 @@ footer {
     padding: 1rem;
 }
 
-/* Responsive Design */
 
-/* Smaller Screens (Mobile) */
+
+/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        /* Stack navigation links vertically */
+        background-color: #051f56;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 10px 0;
+    }
+
+    nav.hidden {
+        display: none;
+    }
+
+    nav a {
+        padding: 2rem;
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 768px) {
     #hamburger {
-        display: inline-block; /* Show hamburger menu */
+        display: inline-block;
+        /* Show hamburger menu */
     }
 
     nav ul {
-        display: none; /* Hide nav menu by default on small screens */
+        display: none;
+        /* Hide nav menu by default on small screens */
         flex-direction: column;
         background-color: #002147;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        z-index: 1000; /* Ensure menu is on top */
+        z-index: 1000;
+        /* Ensure menu is on top */
     }
 
     nav ul.visible {
-        display: flex; /* Show menu when visible */
+        display: flex;
+        /* Show menu when visible */
     }
 
     nav li {
         margin: 0;
-        text-align: center;
-    }
-}
-
-/* Larger Screens (Desktop) */
-@media (min-width: 769px) {
-    nav ul {
-        display: flex; /* Horizontal menu on larger screens */
-        justify-content: center;
-        flex-direction: row;
     }
 
-    #hamburger {
-        display: none; /* Hide hamburger menu */
+    .hamburger-menu {
+        display: none;
     }
 }
