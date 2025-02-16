@@ -1,24 +1,12 @@
 /* large.css */
 
-/* Ensure base styles are inherited */
-@import url('base.css');
-
-/* Styles for larger screens */
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
+/* @import url('base.css');
 
 nav ul {
   display: flex;
   gap: 1rem;
-}
+} 
 
-/* Hero Section */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -33,17 +21,12 @@ nav ul {
   border-radius: 0.5rem;
 }
 
-/* Spotlight Section */
 .spotlights {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  /* display: flex;
-  grid-template-columns: 2fr 1fr;
-  justify-content: space-between;
-  gap: 1rem; */
 }
 
 .spotlights .card {
@@ -57,10 +40,34 @@ nav ul {
   border-radius: 0.5rem;
 }
 
-/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+} */
+
+/* larger.css */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2em;
+  }
+
+  #gallery img {
+    max-width: 100%;
+    transition: transform 0.3s;
+  }
+
+  #gallery img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 1024px) {
+  nav ul {
+    justify-content: flex-start;
+    padding-left: 1em;
+  }
 }

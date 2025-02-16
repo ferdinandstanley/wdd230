@@ -4,114 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Welcome to the Chamber of Commerce - Connecting businesses and fostering community growth.">
-    <meta property="og:title" content="Lagos Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta name="author" content="Stanley Uchechukwu Ferdinand">
-    <meta property="og:image" content="https://www.lagoschamberofcommerce.com/images/favicon.png">
-    <meta property="og:url" content="https://www.lagoschamberofcommerce.com">
-    <link rel="icon" href="https://www.lagoschamberofcommerce.com/images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="styles/chambernormalize.css">
-    <link rel="stylesheet" href="styles/chamberbase.css">
-    <link rel="stylesheet" href="styles/chamberlarge.css">
+    <meta name="description" content="Welcome to the Chamber of Commerce!">
     <title>Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/chambernormalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="images/lcc_new_logo.png" alt="Lagos Chamber of Commerce Logo">
-        </div>
-        <nav>
-            <button class="hamburger" aria-label="Toggle navigation">
-                &#9776;
-            </button>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
+        <h1>Chamber of Commerce</h1>
+        <button id="menu-toggle" class="menu-icon">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="chamber.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section class="hero">
-            <img src="images/hero_img.jpg" alt="Hero Image">
-            <div class="hero-content">
-                <h1>Welcome to the Lagos Chamber of Commerce</h1>
-                <p>Join us in connecting businesses and building a stronger community.</p>
-                <a href="#" class="cta-button">Join the Chamber</a>
-            </div>
+        <section id="hero">
+            <img src="images/hero_img.jpg" alt="Chamber Hero">
+            <h2>Welcome to the Lagos Chamber of Commerce</h2>
+            <p>Join us in connecting businesses and building a stronger community.</p>
+            <a href="join.html" class="cta">Join the Chamber</a>
         </section>
-
-        <section class="events">
-            <h2>Upcoming Events</h2>
+        <section id="events">
+            <h3>Upcoming Events</h3>
             <p>Stay updated with the latest events happening in our community.</p>
             <a href="#" class="cta-button2">Stay updated</a>
         </section>
-
-        <section class="weather">
-            <h2>Weather</h2>
-            <div class="weather-card">
-                <p>Lagos, Nigeria</p>
-                <p>🌞 69°F - Sunshine</p>
-                <p>Page Visits: 427</p>
-            </div>
+        <section id="weather">
+            <h3>Current Weather</h3>
+            <p>Lagos, Nigeria</p>
+            <p>🌞 69°F - Sunshine</p>
+            <p>Page Visits: 427</p>
         </section>
-
-        <section class="spotlights">
-            <h2>Company Spotlights</h2>
-            <div class="spotlight-container">
-                <div class="spotlight">
-                    <img src="images/collaborate.jpg" alt="Company 1">
-                    <h3>Collaborate</h3>
-                    <p> In professional environments, collaboration often improves productivity, builds stronger
-                        relationships,
-                        and creates a sense of shared ownership in achieving outcomes. Successful collaboration requires
-                        active listening,
-                        trust, transparency, and accountability. With the rise of digital technologies, remote
-                        collaboration
-                        through tools and platforms has become increasingly common, breaking down geographical barriers
-                        and making teamwork more accessible globally.</p>
-                    <a href="#">Read More</a>
-                </div>
-                <div class="spotlight">
-                    <img src="images/team_work.jpg" alt="Company 2">
-                    <h3>Team Work</h3>
-                    <p>Teamwork is the cooperative effort of individuals working together to achieve a common objective.
-                        It involves sharing responsibilities, leveraging diverse skills, and supporting one another
-                        to reach goals more efficiently and effectively than working alone.
-                        Key elements of successful teamwork include communication, trust, accountability,
-                        and mutual respect. By fostering collaboration, teamwork encourages creative
-                        problem-solving and boosts productivity while strengthening relationships within groups.</p>
-                    <a href="#">Read More</a>
-                </div>
-                <div class="spotlight">
-                    <img src="images/Ideas.jpg" alt="Company 3">
-                    <h3>In professional settings, information sharing can improve efficiency, build trust, and
-                        strengthen relationships.
-                        Key aspects include clarity, relevance, and accessibility, ensuring that the right information
-                        reaches
-                        the right audience at the right time. With advancements in digital communication tools,
-                        the process of sharing information has become faster and more widespread, enabling global
-                        connectivity
-                        and knowledge dissemination.</p>
-                        <a href="#">Read More</a>
-                </div>
-            </div>
+        <section id="spotlights">
+            <h3>Collaborate</h3>
+            <article>
+                <img src="images/collaborate.jpg" alt="Collaborate Team">
+                <p>In professional environments, collaboration improves productivity, builds stronger relationships, and
+                    creates shared ownership in achieving outcomes. Remote collaboration tools make teamwork accessible
+                    globally.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h4>Teamwork</h4>
+                <img src="images/team_work.jpg" alt="Teamwork Collaboration">
+                <p>Teamwork involves cooperative efforts to achieve shared goals. Key factors include communication,
+                    trust, accountability, and respect, fostering creative problem-solving and strengthening
+                    relationships.</p>
+                <a href="#">Read More</a>
+                <p>Excellence in customer support.</p>
+            </article>
         </section>
     </main>
-
     <footer>
-        <p>Contact us at info@lagoschamberofcommerce.com | Phone: (123) 456-7890</p>
+        <p>Contact us at info@lagoschamberofcommerce.com | Phone: (+234706) 062-3962</p>
+        <p>Project by Stanley Uchechukwu Ferdinand for WDD 230. Last updated <span id="last-modified"></span>.</p>
         <p>&copy; 2025 Lagos Chamber of Commerce | Project for WDD 230</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-        <script>
-            document.getElementById('lastModified').textContent = document.lastModified;
-        </script>
     </footer>
+    <script src="scripts/chamberactivity.js"></script>
 </body>
 
 </html>

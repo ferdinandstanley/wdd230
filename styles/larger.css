@@ -19,6 +19,32 @@
     }
 }
 
+/* larger.css */
+@media (min-width: 768px) {
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2em;
+    }
+  
+    #gallery img {
+      max-width: 100%;
+      transition: transform 0.3s;
+    }
+  
+    #gallery img:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    nav ul {
+      justify-content: flex-start;
+      padding-left: 1em;
+    }
+  }
+  
+
 
 
 /* Layout Adjustments for Larger Screens 
