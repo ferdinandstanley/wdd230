@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <meta property="og:url" content="https://www.lagoschamberofcommerce.com">
     <link rel="stylesheet" href="styles/chamberbase.css">
 </head>
+
 <body>
     <header>
         <h1>Lagos Chamber of Commerce</h1>
@@ -22,68 +24,68 @@
             <a href="directory.html">Directory</a>
         </nav>
     </header>
-        <main>
-            <section class="form-container">
-                <form action="thankyou.html" method="get">
-                    <h2>Membership Application</h2>
-    
-                    <label for="fname">First Name: 
-                        <input type="text" id="fname" name="fname" required>
-                    </label>
-    
-                    <label for="lname">Last Name: 
-                        <input type="text" id="lname" name="lname" required>
-                    </label>
-    
-                    <label for="title">Title/Position: 
-                        <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}">
-                    </label>
-    
-                    <label for="email">Email: 
-                        <input type="email" id="email" name="email" required placeholder="example@email.com">
-                    </label>
-    
-                    <label for="phone">Mobile Phone: 
-                        <input type="tel" id="phone" name="phone" required>
-                    </label>
-    
-                    <label for="business">Business/Organization: 
-                        <input type="text" id="business" name="business" required>
-                    </label>
-    
-                    <label for="membership">Membership Level: 
-                        <select id="membership" name="membership" required>
-                            <option value="NP">NP Membership (Non-Profit, Free)</option>
-                            <option value="Bronze">Bronze Membership</option>
-                            <option value="Silver">Silver Membership</option>
-                            <option value="Gold">Gold Membership</option>
-                        </select>
-                    </label>
-    
-                    <label for="description">Business/Organization Description:
-                        <textarea id="description" name="description"></textarea>
-                    </label>
-    
-                    <input type="hidden" id="timestamp" name="timestamp">
-    
-                    <input type="submit" value="Submit Membership">
-                </form>
-    
-                <aside class="membership-benefits">
-                    <h3>Membership Benefits</h3>
-                    <ul>
-                        <li><strong>NP:</strong> Free listing, access to events.</li>
-                        <li><strong>Bronze:</strong> NP benefits + Training access.</li>
-                        <li><strong>Silver:</strong> Bronze benefits + Advertising.</li>
-                        <li><strong>Gold:</strong> Silver benefits + Spotlight promotion.</li>
-                    </ul>
-                </aside>
-            </section>
-        </main>
+    <main>
+        <section class="form-container">
+            <form action="thankyou.html" method="get">
+                <h2>Membership Application</h2>
+
+                <label for="fname">First Name:
+                    <input type="text" id="fname" name="fname" required>
+                </label>
+
+                <label for="lname">Last Name:
+                    <input type="text" id="lname" name="lname" required>
+                </label>
+
+                <label for="title">Title/Position:
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}">
+                </label>
+
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </label>
+
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+
+                <label for="business">Business/Organization:
+                    <input type="text" id="business" name="business" required>
+                </label>
+
+                <label for="membership">Membership Level:
+                    <select id="membership" name="membership" required>
+                        <option value="NP">NP Membership (Non-Profit, Free)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">Business/Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit Membership">
+            </form>
+
+            <aside class="membership-benefits">
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li><strong>NP:</strong> Free listing, access to events.</li>
+                    <li><strong>Bronze:</strong> NP benefits + Training access.</li>
+                    <li><strong>Silver:</strong> Bronze benefits + Advertising.</li>
+                    <li><strong>Gold:</strong> Silver benefits + Spotlight promotion.</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
     <script>
-    document.getElementById("timestamp").value = new Date().toISOString();
+        document.getElementById("timestamp").value = new Date().toISOString();
     </script>
-    
+
     <footer>
         <p>&copy; <span id="currentyear"></span> 🌸 Stanley Uchechukwu Ferdinand, Lagos, Nigeria 🌸</p>
         <p id="lastModified"></p>
@@ -91,4 +93,5 @@
     <script src="scripts/getDate.js" defer></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
