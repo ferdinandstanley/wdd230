@@ -25,18 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        height: 'auto',
-        events: [
-            { title: 'Business Networking', start: '2025-02-20' },
-            { title: 'Annual Meeting', start: '2025-02-25' }
-        ]
-    });
-    calendar.render();
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var calendarEl = document.getElementById('calendar');
+//     var calendar = new FullCalendar.Calendar(calendarEl, {
+//         initialView: 'dayGridMonth',
+//         height: 'auto',
+//         events: [
+//             { title: 'Business Networking', start: '2025-02-20' },
+//             { title: 'Annual Meeting', start: '2025-02-25' }
+//         ]
+//     });
+//     calendar.render();
+// });
 
 
 
