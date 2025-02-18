@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wireframe Layout</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description"
+    content="This is WDD 230 - Web Frontend Development course assignment portal for Stanley Uchechukwu Ferdinand.">
+  <meta name="author" content="Stanley Uchechukwu Ferdinand">
+  <title>Form Submission</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
 </head>
+
 <body>
   <header>
-    <div class="logo">
-      <img src="https://via.placeholder.com/100x50" alt="Logo">
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Link one</a></li>
-        <li><a href="#">Link two</a></li>
-        <li><a href="#">Link three</a></li>
-        <li><a href="#">Link four</a></li>
-      </ul>
+    <!-- <h1>Temples</h1> -->
+    <img src="images/stan.jpg" alt="Stanley Uchechukwu Ferdinand" width="100" height="100">
+    <span>Stanley Uchechukwu Ferdinand</span>
+    <button class="hamburger-menu" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="hidden">
+      <a href="index.html" class="active">Home Page</a>
+      <a href="chamber.html">Chamber</a>
+      <a href="siteplan.html">Site Plan</a>
+      <a href="form.html">Form</a>
     </nav>
   </header>
 
-  <main>
-    <section class="text-section">
-      <h1>Text</h1>
-      <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.</p>
-      <div class="buttons">
-        <button class="primary">Button</button>
-        <button class="secondary">Button</button>
-      </div>
-    </section>
+  <body>
+    <h1>Form Page</h1>
 
-    <section class="main-image">
-      <img src="https://via.placeholder.com/400x300" alt="Main Image">
-    </section>
+    <main>
+      <form action="record.html" method="get" id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
 
-    <section class="cards">
-      <div class="card">
-        <img src="https://via.placeholder.com/150x100" alt="Card Image">
-        <h3>Medium length headline</h3>
-        <p><a href="#">Read more</a></p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/150x100" alt="Card Image">
-        <h3>Medium length headline</h3>
-        <p><a href="#">Read more</a></p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/150x100" alt="Card Image">
-        <h3>Medium length headline</h3>
-        <p><a href="#">Read more</a></p>
-      </div>
-    </section>
-  </main>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}"
+          title="Password must be at least 8 characters long and alphanumeric." />
 
-  <footer>
-    Footer
-  </footer>
-</body>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$"
+          title="Please enter a valid BYUI email address." />
+
+        <label for="rating">Page Rating:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" />
+        <span id="ratingValue">5</span>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> 🌸 Stanley Uchechukwu Ferdinand, Lagos, Nigeria 🌸</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDate.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/links.js"></script>
+  </body>
+
 </html>
