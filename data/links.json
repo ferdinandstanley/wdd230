@@ -1,0 +1,70 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "Holy Grail Layout"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "Media Queries"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/design-principles.html",
+            "title": "Design Principles"
+          },
+          {
+            "url": "week02/responsive-images.html",
+            "title": "Responsive Images"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/forms.html",
+            "title": "HTML Forms"
+          },
+          {
+            "url": "week03/css-grid.html",
+            "title": "CSS Grid Layout"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week04/fetch-api.html",
+            "title": "Fetch API"
+          },
+          {
+            "url": "week04/local-storage.html",
+            "title": "Local Storage"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "week05/weather-api.html",
+            "title": "Weather API Integration"
+          },
+          {
+            "url": "week05/json-practice.html",
+            "title": "JSON Practice"
+          }
+        ]
+      }
+    ]
+  }
+  
