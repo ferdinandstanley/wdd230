@@ -11,14 +11,12 @@
 </head>
 <body>
     <header>
-        <h1>Chamber of Commerce</h1>
-        <nav>
-            <ul>
-                <li><a href="chamber.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="directory.html">Directory</a></li>
-            </ul>
+        <h1>Lagos Chamber of Commerce</h1>
+        <nav id="nav-menu" class="hidden">
+            <a href="index.html" class="active">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join us</a>
+            <a href="directory.html">Directory</a>
         </nav>
     </header>
     <main>
@@ -58,9 +56,10 @@
     </script>
     
     <footer>
-        <p>Contact us: 123-456-7890 | chamber@example.com</p>
-        <p>Project by [Your Full Name] for WDD 230. Last updated <span id="last-modified"></span>.</p>
+        <p>&copy; <span id="currentyear"></span> 🌸 Stanley Uchechukwu Ferdinand, Lagos, Nigeria 🌸</p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDate.js" defer></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

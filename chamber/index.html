@@ -14,15 +14,13 @@
 
 <body>
     <header>
-        <h1>Chamber of Commerce</h1>
+        <h1>Lagos Chamber of Commerce</h1>
         <button id="menu-toggle" class="menu-icon">&#9776;</button>
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="chamber.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="directory.html">Directory</a></li>
-            </ul>
+        <nav id="nav-menu" class="hidden">
+            <a href="index.html" class="active">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join us</a>
+            <a href="directory.html">Directory</a>
         </nav>
     </header>
     <main>
@@ -64,10 +62,15 @@
         </section>
     </main>
     <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Stanley Uchechukwu Ferdinand, Lagos, Nigeria 🌸</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDate.js" defer></script>
+    <!-- <footer>
         <p>Contact us at info@lagoschamberofcommerce.com | Phone: (+234706) 062-3962</p>
         <p>Project by Stanley Uchechukwu Ferdinand for WDD 230. Last updated <span id="last-modified"></span>.</p>
         <p>&copy; 2025 Lagos Chamber of Commerce | Project for WDD 230</p>
-    </footer>
+    </footer> -->
     <script src="scripts/chamberactivity.js"></script>
 </body>
 
