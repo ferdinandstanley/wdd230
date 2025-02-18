@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    let timestampInput = document.getElementById("timestamp");
+    let now = new Date();
+    timestampInput.value = now.toISOString();
+});
+
 // document.addEventListener('DOMContentLoaded', function() {
 //     var calendarEl = document.getElementById('calendar');
 //     var calendar = new FullCalendar.Calendar(calendarEl, {
