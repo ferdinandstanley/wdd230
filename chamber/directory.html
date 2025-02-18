@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Web Frontend Development course - Directory page of the Chamber project Stanley Uchechukwu Ferdinand.">
     <meta name="author" content="Stanley Uchechukwu Ferdinand">
-    <title>Stanley Uchechukwu Ferdinand - WDD 230 - Directory page of the Chamber website</title>
+    <meta name="description" content="The Chamber Directory Page">
+    <title>The Chamber Directory Page</title>
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.lagoschamberofcommerce.com/images/favicon.png">
+    <meta property="og:url" content="https://www.lagoschamberofcommerce.com">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
 </head>
+
 <body>
     <header>
-        <!-- <img src="Images/stanley.jpg" alt="Stanley Uchechukwu Ferdinand" width="100" height="100">
-        <span>Stanley Uchechukwu Ferdinand</span> -->
         <h1>Lagos Chamber of Commerce</h1>
         <button class="hamburger-menu" aria-label="Menu" aria-expanded="false">☰</button>
         <nav id="nav-menu" class="hidden">
@@ -24,11 +28,11 @@
     </header>
     <main>
         <div>
-        <section id="directory-controls">
-            <button id="grid-view">Grid View</button>
-            <button id="list-view">List View</button>
-        </section>
-        <section id="directory-container" class="grid-view"></section>
+            <section id="directory-controls">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </section>
+            <section id="directory-container" class="grid-view"></section>
         </div>
     </main>
     <footer>
@@ -38,4 +42,5 @@
     <script src="scripts/getDate.js" defer></script>
     <script src="scripts/directory.js" defer></script>
 </body>
+
 </html>
