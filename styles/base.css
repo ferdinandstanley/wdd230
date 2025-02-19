@@ -273,10 +273,11 @@ footer {
   
   form {
     background-color: #fff;
+    align-items: center;
     padding: 2rem;
     margin: 2rem auto;
-    width: 90%;
-    max-width: 500px;
+    width: 500px;
+    max-width: 1000px;
     border-radius: var(--border-radius);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
