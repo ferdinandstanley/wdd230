@@ -25,11 +25,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let timestampInput = document.getElementById("timestamp");
     let now = new Date();
     timestampInput.value = now.toISOString();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const visitMessage = document.getElementById("visit-message");
+
+    // Get last visit from localStorage
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = new Date();
+
+    if (!lastVisit) {
+        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const lastVisitDate = new Date(lastVisit);
+        const timeDifference = now - lastVisitDate;
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        if (daysDifference < 1) {
+            visitMessage.textContent = "Back so soon! Awesome!";
+        } else {
+            visitMessage.textContent = `You last visited ${daysDifference} ${daysDifference === 1 ? "day" : "days"} ago.`;
+        }
+    }
+
+    // Store current visit in localStorage
+    localStorage.setItem("lastVisit", now);
+});
+
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     var calendarEl = document.getElementById('calendar');
